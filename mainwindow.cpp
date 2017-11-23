@@ -23,17 +23,5 @@ void MainWindow::on_pushButton_clicked()
 }
 void MainWindow::slot_lineEditingFinished()
 {
-    int value = ui->lineEdit->text().toInt();
-    switch(value)
-    {
-    case 1:
-        ui->lineEdit_2->setText("123");
-        break;
-    case 2:
-        ui->lineEdit_2->setText("321");
-        break;
-    default:
-        ui->lineEdit_2->clear();
-        break;
-    }
+
 }
