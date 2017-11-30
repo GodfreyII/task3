@@ -24,4 +24,11 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::slot_lineEditingFinished()
 {
 
+      if(SIGNAL(editingFinished()))
+      {
+          ui->lineEdit_2->clear();
+          ui->lineEdit->selectAll();
+          ui->lineEdit->copy();
+          ui->lineEdit_2->paste();
+      }
 }
